@@ -89,6 +89,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Inventory</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Singleton class containing all items present in the store's inventory</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -105,13 +106,19 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Inventory.html" title="class in Unnamed Package">Inventory</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getInstance()" class="member-name-link">getInstance</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Get the inventory object</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>javafx.collections.ObservableList<wbr>&lt;<a href="InventoryItem.html" title="class in Unnamed Package">InventoryItem</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getItems()" class="member-name-link">getItems</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Get an ObservableList of items for the inventory screen</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#populate()" class="member-name-link">populate</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Query the database and repopulate the inventory</div>
+</div>
 </div>
 </div>
 </div>
@@ -133,18 +140,29 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="populate()">
 <h3>populate</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">populate</span>()</div>
+<div class="block">Query the database and repopulate the inventory</div>
 </section>
 </li>
 <li>
 <section class="detail" id="getInstance()">
 <h3>getInstance</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Inventory.html" title="class in Unnamed Package">Inventory</a></span>&nbsp;<span class="element-name">getInstance</span>()</div>
+<div class="block">Get the inventory object</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the inventory singleton</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getItems()">
 <h3>getItems</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.collections.ObservableList&lt;<a href="InventoryItem.html" title="class in Unnamed Package">InventoryItem</a>&gt;</span>&nbsp;<span class="element-name">getItems</span>()</div>
+<div class="block">Get an ObservableList of items for the inventory screen</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the items list</dd>
+</dl>
 </section>
 </li>
 </ul>

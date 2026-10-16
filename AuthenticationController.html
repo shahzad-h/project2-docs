@@ -89,6 +89,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">AuthenticationController</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">JavaFX controller for the authentication (log-in) screen</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -128,11 +129,13 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#openAuthWindow(javafx.stage.Window,boolean,javafx.scene.Scene,java.util.function.Consumer)" class="member-name-link">openAuthWindow</a><wbr>(javafx.stage.Window&nbsp;window,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#openAuthWindow(javafx.stage.Window,boolean,java.util.function.Consumer)" class="member-name-link">openAuthWindow</a><wbr>(javafx.stage.Window&nbsp;window,
  boolean&nbsp;manager,
- javafx.scene.Scene&nbsp;scene,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&nbsp;onComplete)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Opens the authentication window and blocks until a valid input is entered <br>
+ Invokes onComplete with the success value on exit</div>
+</div>
 </div>
 </div>
 </div>
@@ -183,14 +186,19 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="openAuthWindow(javafx.stage.Window,boolean,javafx.scene.Scene,java.util.function.Consumer)">
+<section class="detail" id="openAuthWindow(javafx.stage.Window,boolean,java.util.function.Consumer)">
 <h3>openAuthWindow</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">openAuthWindow</span><wbr><span class="parameters">(javafx.stage.Window&nbsp;window,
  boolean&nbsp;manager,
- javafx.scene.Scene&nbsp;scene,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&nbsp;onComplete)</span>
                            throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></span></div>
+<div class="block">Opens the authentication window and blocks until a valid input is entered <br>
+ Invokes onComplete with the success value on exit</div>
 <dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>window</code> - window to spawn this window under</dd>
+<dd><code>manager</code> - requesting manager access?</dd>
+<dd><code>onComplete</code> - function to call on authentication complete</dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></code></dd>
 </dl>
