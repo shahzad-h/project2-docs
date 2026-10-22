@@ -89,6 +89,8 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">MenuDatabaseAccess</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Handles database operations for menu items, including
+ adding, updating, retrieving, and deactivating items.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -120,29 +122,41 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#addMenuItem(java.lang.String,float,java.lang.String)" class="member-name-link">addMenuItem</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  float&nbsp;price,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Adds a menu item with an empty recipe.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#addMenuItem(java.lang.String,float,java.lang.String,java.lang.String)" class="member-name-link">addMenuItem</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  float&nbsp;price,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;recipe)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Adds a new menu item with its information and recipe.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#deactivateMenuItem(int)" class="member-name-link">deactivateMenuItem</a><wbr>(int&nbsp;id)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Deactivates a menu item without deleting it from the database.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getActiveMenuItems()" class="member-name-link">getActiveMenuItems</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Retrieves all active menu items from the database.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getAllMenuItems()" class="member-name-link">getAllMenuItems</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Retrieves all menu items from the database.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#updateMenuItem(int,java.lang.String,float,java.lang.String,java.lang.String)" class="member-name-link">updateMenuItem</a><wbr>(int&nbsp;id,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  float&nbsp;price,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;recipe)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Updates an existing menu item's information and recipe.</div>
+</div>
 </div>
 </div>
 </div>
@@ -178,18 +192,33 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getAllMenuItems()">
 <h3>getAllMenuItems</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>&gt;</span>&nbsp;<span class="element-name">getAllMenuItems</span>()</div>
+<div class="block">Retrieves all menu items from the database.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a list of all menu items ordered by ID</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getActiveMenuItems()">
 <h3>getActiveMenuItems</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>&gt;</span>&nbsp;<span class="element-name">getActiveMenuItems</span>()</div>
+<div class="block">Retrieves all active menu items from the database.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a list of active menu items ordered by ID</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="deactivateMenuItem(int)">
 <h3>deactivateMenuItem</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">deactivateMenuItem</span><wbr><span class="parameters">(int&nbsp;id)</span></div>
+<div class="block">Deactivates a menu item without deleting it from the database.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>id</code> - the ID of the menu item to deactivate</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -199,6 +228,14 @@ loadScripts(document, 'script');</script>
  float&nbsp;price,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;recipe)</span></div>
+<div class="block">Adds a new menu item with its information and recipe.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - the name of the menu item</dd>
+<dd><code>price</code> - the price of the menu item</dd>
+<dd><code>description</code> - the description of the menu item</dd>
+<dd><code>recipe</code> - the ingredients and quantities stored as JSON</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -207,6 +244,13 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addMenuItem</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  float&nbsp;price,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description)</span></div>
+<div class="block">Adds a menu item with an empty recipe.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - the name of the menu item</dd>
+<dd><code>price</code> - the price of the menu item</dd>
+<dd><code>description</code> - the description of the menu item</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -217,6 +261,15 @@ loadScripts(document, 'script');</script>
  float&nbsp;price,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;recipe)</span></div>
+<div class="block">Updates an existing menu item's information and recipe.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>id</code> - the ID of the menu item to update</dd>
+<dd><code>name</code> - the updated name of the menu item</dd>
+<dd><code>price</code> - the updated price of the menu item</dd>
+<dd><code>description</code> - the updated description of the menu item</dd>
+<dd><code>recipe</code> - the updated ingredients and quantities stored as JSON</dd>
+</dl>
 </section>
 </li>
 </ul>

@@ -37,7 +37,7 @@ loadScripts(document, 'script');</script>
 <p>Summary:</p>
 <ul>
 <li>Nested</li>
-<li>Field</li>
+<li><a href="#field-summary">Field</a></li>
 <li><a href="#constructor-summary">Constr</a></li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
@@ -45,7 +45,7 @@ loadScripts(document, 'script');</script>
 <li>
 <p>Detail:</p>
 <ul>
-<li>Field</li>
+<li><a href="#field-detail">Field</a></li>
 <li><a href="#constructor-detail">Constr</a></li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
@@ -57,13 +57,13 @@ loadScripts(document, 'script');</script>
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field-summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor-summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field-detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor-detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
@@ -89,6 +89,8 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">EmployeeItem</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Represents an employee with their ID, name,
+ position, and active status.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -103,16 +105,56 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>javafx.beans.property.BooleanProperty</code></div>
 <div class="col-second even-row-color"><code><a href="#activeProperty" class="member-name-link">active</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Retrieves the employee's active status property.</div>
+</div>
 <div class="col-first odd-row-color"><code>javafx.beans.property.IntegerProperty</code></div>
 <div class="col-second odd-row-color"><code><a href="#employeeIdProperty" class="member-name-link">employeeId</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Retrieves the employee's ID property.</div>
+</div>
 <div class="col-first even-row-color"><code>javafx.beans.property.StringProperty</code></div>
 <div class="col-second even-row-color"><code><a href="#employeeNameProperty" class="member-name-link">employeeName</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Retrieves the employee's name property.</div>
+</div>
 <div class="col-first odd-row-color"><code>javafx.beans.property.StringProperty</code></div>
 <div class="col-second odd-row-color"><code><a href="#positionProperty" class="member-name-link">position</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Retrieves the employee's position property.</div>
+</div>
+</div>
+</section>
+</li>
+<!-- =========== FIELD SUMMARY =========== -->
+<li>
+<section class="field-summary" id="field-summary">
+<h2>Field Summary</h2>
+<div class="caption"><span>Fields</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Field</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>private final javafx.beans.property.BooleanProperty</code></div>
+<div class="col-second even-row-color"><code><a href="#active" class="member-name-link">active</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Whether the employee is currently active.</div>
+</div>
+<div class="col-first odd-row-color"><code>private final javafx.beans.property.IntegerProperty</code></div>
+<div class="col-second odd-row-color"><code><a href="#employeeId" class="member-name-link">employeeId</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">The unique ID of the employee.</div>
+</div>
+<div class="col-first even-row-color"><code>private final javafx.beans.property.StringProperty</code></div>
+<div class="col-second even-row-color"><code><a href="#employeeName" class="member-name-link">employeeName</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">The name of the employee.</div>
+</div>
+<div class="col-first odd-row-color"><code>private final javafx.beans.property.StringProperty</code></div>
+<div class="col-second odd-row-color"><code><a href="#position" class="member-name-link">position</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">The position of the employee.</div>
+</div>
 </div>
 </section>
 </li>
@@ -128,7 +170,10 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;employeeName,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;position,
  boolean&nbsp;active)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Creates an employee with their ID, name, position,
+ and active status.</div>
+</div>
 </div>
 </section>
 </li>
@@ -145,48 +190,58 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>javafx.beans.property.BooleanProperty</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#activeProperty()" class="member-name-link">activeProperty</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Retrieves the employee's active status property.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>javafx.beans.property.IntegerProperty</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#employeeIdProperty()" class="member-name-link">employeeIdProperty</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Retrieves the employee's ID property.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>javafx.beans.property.StringProperty</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#employeeNameProperty()" class="member-name-link">employeeNameProperty</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Retrieves the employee's name property.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getActive()" class="member-name-link">getActive</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the value of the <code>active</code> property.</div>
+<div class="block">Retrieves the employee's active status.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getEmployeeName()" class="member-name-link">getEmployeeName</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the value of the <code>employeeName</code> property.</div>
+<div class="block">Retrieves the employee's name.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getId()" class="member-name-link">getId</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Retrieves the employee's ID.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPosition()" class="member-name-link">getPosition</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the value of the <code>position</code> property.</div>
+<div class="block">Retrieves the employee's position.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>javafx.beans.property.StringProperty</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#positionProperty()" class="member-name-link">positionProperty</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Retrieves the employee's position property.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setActive(boolean)" class="member-name-link">setActive</a><wbr>(boolean&nbsp;newActive)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the value of the <code>active</code> property.</div>
+<div class="block">Updates the employee's active status.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEmployeeName(java.lang.String)" class="member-name-link">setEmployeeName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the value of the <code>employeeName</code> property.</div>
+<div class="block">Updates the employee's name.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setPosition(java.lang.String)" class="member-name-link">setPosition</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;newPosition)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the value of the <code>position</code> property.</div>
+<div class="block">Updates the employee's position.</div>
 </div>
 </div>
 </div>
@@ -209,6 +264,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="employeeIdProperty">
 <h3>employeeId</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.IntegerProperty</span>&nbsp;<span class="element-name">employeeIdProperty</span></div>
+<div class="block">Retrieves the employee's ID property.</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -223,12 +279,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="employeeNameProperty">
 <h3>employeeName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.StringProperty</span>&nbsp;<span class="element-name">employeeNameProperty</span></div>
+<div class="block">Retrieves the employee's name property.</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="#getEmployeeName()"><code>getEmployeeName()</code></a></li>
-<li><a href="#setEmployeeName(java.lang.String)"><code>setEmployeeName(String)</code></a></li>
 <li><a href="#employeeNameProperty()"><code>employeeNameProperty()</code></a></li>
 </ul>
 </dd>
@@ -239,12 +294,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="positionProperty">
 <h3>position</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.StringProperty</span>&nbsp;<span class="element-name">positionProperty</span></div>
+<div class="block">Retrieves the employee's position property.</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="#getPosition()"><code>getPosition()</code></a></li>
-<li><a href="#setPosition(java.lang.String)"><code>setPosition(String)</code></a></li>
 <li><a href="#positionProperty()"><code>positionProperty()</code></a></li>
 </ul>
 </dd>
@@ -255,16 +309,51 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="activeProperty">
 <h3>active</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.BooleanProperty</span>&nbsp;<span class="element-name">activeProperty</span></div>
+<div class="block">Retrieves the employee's active status property.</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
-<li><a href="#getActive()"><code>getActive()</code></a></li>
-<li><a href="#setActive(boolean)"><code>setActive(boolean)</code></a></li>
 <li><a href="#activeProperty()"><code>activeProperty()</code></a></li>
 </ul>
 </dd>
 </dl>
+</section>
+</li>
+</ul>
+</section>
+</li>
+<!-- ============ FIELD DETAIL =========== -->
+<li>
+<section class="field-details" id="field-detail">
+<h2>Field Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="employeeId">
+<h3>employeeId</h3>
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.beans.property.IntegerProperty</span>&nbsp;<span class="element-name">employeeId</span></div>
+<div class="block">The unique ID of the employee.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="employeeName">
+<h3>employeeName</h3>
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.beans.property.StringProperty</span>&nbsp;<span class="element-name">employeeName</span></div>
+<div class="block">The name of the employee.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="position">
+<h3>position</h3>
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.beans.property.StringProperty</span>&nbsp;<span class="element-name">position</span></div>
+<div class="block">The position of the employee.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="active">
+<h3>active</h3>
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.beans.property.BooleanProperty</span>&nbsp;<span class="element-name">active</span></div>
+<div class="block">Whether the employee is currently active.</div>
 </section>
 </li>
 </ul>
@@ -282,6 +371,15 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;employeeName,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;position,
  boolean&nbsp;active)</span></div>
+<div class="block">Creates an employee with their ID, name, position,
+ and active status.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>employeeId</code> - the ID of the employee</dd>
+<dd><code>employeeName</code> - the name of the employee</dd>
+<dd><code>position</code> - the position of the employee</dd>
+<dd><code>active</code> - the active status of the employee</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -296,24 +394,21 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getId()">
 <h3>getId</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getId</span>()</div>
+<div class="block">Retrieves the employee's ID.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the ID of the employee</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getEmployeeName()">
 <h3>getEmployeeName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getEmployeeName</span>()</div>
-<div class="block">Gets the value of the <code>employeeName</code> property.</div>
+<div class="block">Retrieves the employee's name.</div>
 <dl class="notes">
-<dt>Property description:</dt>
 <dt>Returns:</dt>
-<dd>the value of the <code>employeeName</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#setEmployeeName(java.lang.String)"><code>setEmployeeName(String)</code></a></li>
-<li><a href="#employeeNameProperty()"><code>employeeNameProperty()</code></a></li>
-</ul>
-</dd>
+<dd>the name of the employee</dd>
 </dl>
 </section>
 </li>
@@ -321,18 +416,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getPosition()">
 <h3>getPosition</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getPosition</span>()</div>
-<div class="block">Gets the value of the <code>position</code> property.</div>
+<div class="block">Retrieves the employee's position.</div>
 <dl class="notes">
-<dt>Property description:</dt>
 <dt>Returns:</dt>
-<dd>the value of the <code>position</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#setPosition(java.lang.String)"><code>setPosition(String)</code></a></li>
-<li><a href="#positionProperty()"><code>positionProperty()</code></a></li>
-</ul>
-</dd>
+<dd>the position of the employee</dd>
 </dl>
 </section>
 </li>
@@ -340,18 +427,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getActive()">
 <h3>getActive</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">getActive</span>()</div>
-<div class="block">Gets the value of the <code>active</code> property.</div>
+<div class="block">Retrieves the employee's active status.</div>
 <dl class="notes">
-<dt>Property description:</dt>
 <dt>Returns:</dt>
-<dd>the value of the <code>active</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#setActive(boolean)"><code>setActive(boolean)</code></a></li>
-<li><a href="#activeProperty()"><code>activeProperty()</code></a></li>
-</ul>
-</dd>
+<dd>true if the employee is active, otherwise false</dd>
 </dl>
 </section>
 </li>
@@ -359,18 +438,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="setEmployeeName(java.lang.String)">
 <h3>setEmployeeName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setEmployeeName</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</span></div>
-<div class="block">Sets the value of the <code>employeeName</code> property.</div>
+<div class="block">Updates the employee's name.</div>
 <dl class="notes">
-<dt>Property description:</dt>
 <dt>Parameters:</dt>
-<dd><code>name</code> - the value for the <code>employeeName</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#getEmployeeName()"><code>getEmployeeName()</code></a></li>
-<li><a href="#employeeNameProperty()"><code>employeeNameProperty()</code></a></li>
-</ul>
-</dd>
+<dd><code>name</code> - the new name of the employee</dd>
 </dl>
 </section>
 </li>
@@ -378,18 +449,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="setPosition(java.lang.String)">
 <h3>setPosition</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setPosition</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;newPosition)</span></div>
-<div class="block">Sets the value of the <code>position</code> property.</div>
+<div class="block">Updates the employee's position.</div>
 <dl class="notes">
-<dt>Property description:</dt>
 <dt>Parameters:</dt>
-<dd><code>newPosition</code> - the value for the <code>position</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#getPosition()"><code>getPosition()</code></a></li>
-<li><a href="#positionProperty()"><code>positionProperty()</code></a></li>
-</ul>
-</dd>
+<dd><code>newPosition</code> - the new position of the employee</dd>
 </dl>
 </section>
 </li>
@@ -397,18 +460,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="setActive(boolean)">
 <h3>setActive</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setActive</span><wbr><span class="parameters">(boolean&nbsp;newActive)</span></div>
-<div class="block">Sets the value of the <code>active</code> property.</div>
+<div class="block">Updates the employee's active status.</div>
 <dl class="notes">
-<dt>Property description:</dt>
 <dt>Parameters:</dt>
-<dd><code>newActive</code> - the value for the <code>active</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#getActive()"><code>getActive()</code></a></li>
-<li><a href="#activeProperty()"><code>activeProperty()</code></a></li>
-</ul>
-</dd>
+<dd><code>newActive</code> - the new active status of the employee</dd>
 </dl>
 </section>
 </li>
@@ -416,9 +471,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="employeeIdProperty()">
 <h3>employeeIdProperty</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.IntegerProperty</span>&nbsp;<span class="element-name">employeeIdProperty</span>()</div>
+<div class="block">Retrieves the employee's ID property.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the <code>employeeId</code> property</dd>
+<dd>the employee's ID property</dd>
 </dl>
 </section>
 </li>
@@ -426,16 +482,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="employeeNameProperty()">
 <h3>employeeNameProperty</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.StringProperty</span>&nbsp;<span class="element-name">employeeNameProperty</span>()</div>
+<div class="block">Retrieves the employee's name property.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the <code>employeeName</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#getEmployeeName()"><code>getEmployeeName()</code></a></li>
-<li><a href="#setEmployeeName(java.lang.String)"><code>setEmployeeName(String)</code></a></li>
-</ul>
-</dd>
+<dd>the employee's name property</dd>
 </dl>
 </section>
 </li>
@@ -443,16 +493,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="positionProperty()">
 <h3>positionProperty</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.StringProperty</span>&nbsp;<span class="element-name">positionProperty</span>()</div>
+<div class="block">Retrieves the employee's position property.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the <code>position</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#getPosition()"><code>getPosition()</code></a></li>
-<li><a href="#setPosition(java.lang.String)"><code>setPosition(String)</code></a></li>
-</ul>
-</dd>
+<dd>the employee's position property</dd>
 </dl>
 </section>
 </li>
@@ -460,16 +504,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="activeProperty()">
 <h3>activeProperty</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.BooleanProperty</span>&nbsp;<span class="element-name">activeProperty</span>()</div>
+<div class="block">Retrieves the employee's active status property.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the <code>active</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#getActive()"><code>getActive()</code></a></li>
-<li><a href="#setActive(boolean)"><code>setActive(boolean)</code></a></li>
-</ul>
-</dd>
+<dd>the employee's active status property</dd>
 </dl>
 </section>
 </li>

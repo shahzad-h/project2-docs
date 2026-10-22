@@ -89,6 +89,8 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">EmployeeDatabaseAccess</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Handles database operations for employees, including
+ adding, retrieving, updating, and changing their active status.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -119,22 +121,32 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#addEmployee(java.lang.String,java.lang.String)" class="member-name-link">addEmployee</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;position)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Adds a new employee to the database with an inactive status.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="EmployeeItem.html" title="class in Unnamed Package">EmployeeItem</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getAllEmployees()" class="member-name-link">getAllEmployees</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Retrieves all employees from the database.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="EmployeeItem.html" title="class in Unnamed Package">EmployeeItem</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getEmployeeById(int)" class="member-name-link">getEmployeeById</a><wbr>(int&nbsp;id)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Retrieves an employee from the database using their ID.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#updateActiveStatus(int,boolean)" class="member-name-link">updateActiveStatus</a><wbr>(int&nbsp;id,
  boolean&nbsp;active)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Updates an employee's active status in the database.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#updateEmployee(int,java.lang.String,java.lang.String)" class="member-name-link">updateEmployee</a><wbr>(int&nbsp;id,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;position)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Updates an existing employee's name and position.</div>
+</div>
 </div>
 </div>
 </div>
@@ -170,12 +182,24 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getAllEmployees()">
 <h3>getAllEmployees</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="EmployeeItem.html" title="class in Unnamed Package">EmployeeItem</a>&gt;</span>&nbsp;<span class="element-name">getAllEmployees</span>()</div>
+<div class="block">Retrieves all employees from the database.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a list of all employees ordered by ID</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getEmployeeById(int)">
 <h3>getEmployeeById</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="EmployeeItem.html" title="class in Unnamed Package">EmployeeItem</a>&gt;</span>&nbsp;<span class="element-name">getEmployeeById</span><wbr><span class="parameters">(int&nbsp;id)</span></div>
+<div class="block">Retrieves an employee from the database using their ID.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>id</code> - the ID of the employee to retrieve</dd>
+<dt>Returns:</dt>
+<dd>the employee if found, or an empty Optional otherwise</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -183,6 +207,12 @@ loadScripts(document, 'script');</script>
 <h3>addEmployee</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addEmployee</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;position)</span></div>
+<div class="block">Adds a new employee to the database with an inactive status.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - the name of the new employee</dd>
+<dd><code>position</code> - the position of the new employee</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -191,6 +221,13 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">updateEmployee</span><wbr><span class="parameters">(int&nbsp;id,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;position)</span></div>
+<div class="block">Updates an existing employee's name and position.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>id</code> - the ID of the employee to update</dd>
+<dd><code>name</code> - the updated name of the employee</dd>
+<dd><code>position</code> - the updated position of the employee</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -198,6 +235,12 @@ loadScripts(document, 'script');</script>
 <h3>updateActiveStatus</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">updateActiveStatus</span><wbr><span class="parameters">(int&nbsp;id,
  boolean&nbsp;active)</span></div>
+<div class="block">Updates an employee's active status in the database.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>id</code> - the ID of the employee to update</dd>
+<dd><code>active</code> - the new active status of the employee</dd>
+</dl>
 </section>
 </li>
 </ul>

@@ -37,7 +37,7 @@ loadScripts(document, 'script');</script>
 <p>Summary:</p>
 <ul>
 <li>Nested</li>
-<li>Field</li>
+<li><a href="#field-summary">Field</a></li>
 <li><a href="#constructor-summary">Constr</a></li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
@@ -45,7 +45,7 @@ loadScripts(document, 'script');</script>
 <li>
 <p>Detail:</p>
 <ul>
-<li>Field</li>
+<li><a href="#field-detail">Field</a></li>
 <li><a href="#constructor-detail">Constr</a></li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
@@ -57,13 +57,13 @@ loadScripts(document, 'script');</script>
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field-summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor-summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field-detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor-detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
@@ -93,6 +93,33 @@ loadScripts(document, 'script');</script>
 </section>
 <section class="summary">
 <ul class="summary-list">
+<!-- =========== FIELD SUMMARY =========== -->
+<li>
+<section class="field-summary" id="field-summary">
+<h2>Field Summary</h2>
+<div class="caption"><span>Fields</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Field</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>private final com.google.gson.Gson</code></div>
+<div class="col-second even-row-color"><code><a href="#gson" class="member-name-link">gson</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private javafx.scene.layout.VBox</code></div>
+<div class="col-second odd-row-color"><code><a href="#productUsageList" class="member-name-link">productUsageList</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private javafx.scene.layout.VBox</code></div>
+<div class="col-second even-row-color"><code><a href="#salesReportList" class="member-name-link">salesReportList</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private javafx.scene.layout.VBox</code></div>
+<div class="col-second odd-row-color"><code><a href="#seasonalMenuList" class="member-name-link">seasonalMenuList</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private javafx.scene.layout.VBox</code></div>
+<div class="col-second even-row-color"><code><a href="#xReportList" class="member-name-link">xReportList</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <li>
 <section class="constructor-summary" id="constructor-summary">
@@ -117,10 +144,66 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addEmptyMessage(javafx.scene.layout.VBox)" class="member-name-link">addEmptyMessage</a><wbr>(javafx.scene.layout.VBox&nbsp;box)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Adds an empty message when a report section has no reports.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addStatistic(javafx.scene.layout.GridPane,int,java.lang.String,java.lang.String)" class="member-name-link">addStatistic</a><wbr>(javafx.scene.layout.GridPane&nbsp;grid,
+ int&nbsp;row,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Adds one name/value statistic to the X-report summary.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private javafx.scene.layout.HBox</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createReportRow(Report)" class="member-name-link">createReportRow</a><wbr>(<a href="Report.html" title="class in Unnamed Package">Report</a>&nbsp;report)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Creates one row with View and Delete controls for a report.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deleteReport(Report)" class="member-name-link">deleteReport</a><wbr>(<a href="Report.html" title="class in Unnamed Package">Report</a>&nbsp;report)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Confirms and deletes a saved report.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#formatHour(int)" class="member-name-link">formatHour</a><wbr>(int&nbsp;hour)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Converts a 24-hour value to a readable AM/PM label.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#goBack(javafx.event.ActionEvent)" class="member-name-link">goBack</a><wbr>(javafx.event.ActionEvent&nbsp;event)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns to the manager screen.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#initialize()" class="member-name-link">initialize</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Loads saved reports when the reports screen opens.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadReports()" class="member-name-link">loadReports</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Loads saved reports and places them in the correct section.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#showBarReport(Report,java.lang.String,java.lang.String,boolean)" class="member-name-link">showBarReport</a><wbr>(<a href="Report.html" title="class in Unnamed Package">Report</a>&nbsp;report,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;categoryName,
+ boolean&nbsp;limitToTen)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Displays report data as a bar chart.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#showXReport(Report)" class="member-name-link">showXReport</a><wbr>(<a href="Report.html" title="class in Unnamed Package">Report</a>&nbsp;report)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Displays the X-report summary and hourly sales chart.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#viewReport(Report)" class="member-name-link">viewReport</a><wbr>(<a href="Report.html" title="class in Unnamed Package">Report</a>&nbsp;report)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Opens the correct visualization for a report.</div>
 </div>
 </div>
 </div>
@@ -134,6 +217,44 @@ loadScripts(document, 'script');</script>
 </section>
 <section class="details">
 <ul class="details-list">
+<!-- ============ FIELD DETAIL =========== -->
+<li>
+<section class="field-details" id="field-detail">
+<h2>Field Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="productUsageList">
+<h3>productUsageList</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.layout.VBox</span>&nbsp;<span class="element-name">productUsageList</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="xReportList">
+<h3>xReportList</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.layout.VBox</span>&nbsp;<span class="element-name">xReportList</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="seasonalMenuList">
+<h3>seasonalMenuList</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.layout.VBox</span>&nbsp;<span class="element-name">seasonalMenuList</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="salesReportList">
+<h3>salesReportList</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.layout.VBox</span>&nbsp;<span class="element-name">salesReportList</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="gson">
+<h3>gson</h3>
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">com.google.gson.Gson</span>&nbsp;<span class="element-name">gson</span></div>
+</section>
+</li>
+</ul>
+</section>
+</li>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <li>
 <section class="constructor-details" id="constructor-detail">
@@ -158,6 +279,131 @@ loadScripts(document, 'script');</script>
 <h3>initialize</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">initialize</span>()</div>
 <div class="block">Loads saved reports when the reports screen opens.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="loadReports()">
+<h3>loadReports</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">loadReports</span>()</div>
+<div class="block">Loads saved reports and places them in the correct section.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="createReportRow(Report)">
+<h3>createReportRow</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.layout.HBox</span>&nbsp;<span class="element-name">createReportRow</span><wbr><span class="parameters">(<a href="Report.html" title="class in Unnamed Package">Report</a>&nbsp;report)</span></div>
+<div class="block">Creates one row with View and Delete controls for a report.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>report</code> - report to display</dd>
+<dt>Returns:</dt>
+<dd>row containing the report controls</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="addEmptyMessage(javafx.scene.layout.VBox)">
+<h3>addEmptyMessage</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addEmptyMessage</span><wbr><span class="parameters">(javafx.scene.layout.VBox&nbsp;box)</span></div>
+<div class="block">Adds an empty message when a report section has no reports.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>box</code> - report section to check</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="deleteReport(Report)">
+<h3>deleteReport</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">deleteReport</span><wbr><span class="parameters">(<a href="Report.html" title="class in Unnamed Package">Report</a>&nbsp;report)</span></div>
+<div class="block">Confirms and deletes a saved report.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>report</code> - report to delete</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="viewReport(Report)">
+<h3>viewReport</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">viewReport</span><wbr><span class="parameters">(<a href="Report.html" title="class in Unnamed Package">Report</a>&nbsp;report)</span></div>
+<div class="block">Opens the correct visualization for a report.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>report</code> - report to view</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="showBarReport(Report,java.lang.String,java.lang.String,boolean)">
+<h3>showBarReport</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">showBarReport</span><wbr><span class="parameters">(<a href="Report.html" title="class in Unnamed Package">Report</a>&nbsp;report,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;categoryName,
+ boolean&nbsp;limitToTen)</span></div>
+<div class="block">Displays report data as a bar chart.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>report</code> - report to display</dd>
+<dd><code>title</code> - chart title</dd>
+<dd><code>categoryName</code> - category axis label</dd>
+<dd><code>limitToTen</code> - whether to show only the first ten entries</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="showXReport(Report)">
+<h3>showXReport</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">showXReport</span><wbr><span class="parameters">(<a href="Report.html" title="class in Unnamed Package">Report</a>&nbsp;report)</span></div>
+<div class="block">Displays the X-report summary and hourly sales chart.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>report</code> - X-report to display</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="formatHour(int)">
+<h3>formatHour</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">formatHour</span><wbr><span class="parameters">(int&nbsp;hour)</span></div>
+<div class="block">Converts a 24-hour value to a readable AM/PM label.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>hour</code> - hour from 0 through 23</dd>
+<dt>Returns:</dt>
+<dd>formatted hour label</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="addStatistic(javafx.scene.layout.GridPane,int,java.lang.String,java.lang.String)">
+<h3>addStatistic</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addStatistic</span><wbr><span class="parameters">(javafx.scene.layout.GridPane&nbsp;grid,
+ int&nbsp;row,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</span></div>
+<div class="block">Adds one name/value statistic to the X-report summary.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>grid</code> - summary grid</dd>
+<dd><code>row</code> - row position</dd>
+<dd><code>name</code> - statistic name</dd>
+<dd><code>value</code> - statistic value</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="goBack(javafx.event.ActionEvent)">
+<h3>goBack</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">goBack</span><wbr><span class="parameters">(javafx.event.ActionEvent&nbsp;event)</span>
+             throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></span></div>
+<div class="block">Returns to the manager screen.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>event</code> - button event</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></code> - if the manager screen cannot be loaded</dd>
+</dl>
 </section>
 </li>
 </ul>

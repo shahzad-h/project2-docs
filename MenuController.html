@@ -37,7 +37,7 @@ loadScripts(document, 'script');</script>
 <p>Summary:</p>
 <ul>
 <li>Nested</li>
-<li>Field</li>
+<li><a href="#field-summary">Field</a></li>
 <li><a href="#constructor-summary">Constr</a></li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
@@ -45,7 +45,7 @@ loadScripts(document, 'script');</script>
 <li>
 <p>Detail:</p>
 <ul>
-<li>Field</li>
+<li><a href="#field-detail">Field</a></li>
 <li><a href="#constructor-detail">Constr</a></li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
@@ -57,13 +57,13 @@ loadScripts(document, 'script');</script>
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field-summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor-summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field-detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor-detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
@@ -89,9 +89,48 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">MenuController</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Controls the menu management screen and handles adding,
+ updating, and removing menu items.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
+<!-- =========== FIELD SUMMARY =========== -->
+<li>
+<section class="field-summary" id="field-summary">
+<h2>Field Summary</h2>
+<div class="caption"><span>Fields</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Field</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>private javafx.scene.control.TableColumn<wbr>&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#descriptionColumn" class="member-name-link">descriptionColumn</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Column displaying each menu item's description.</div>
+</div>
+<div class="col-first odd-row-color"><code>private javafx.scene.control.TableColumn<wbr>&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#idColumn" class="member-name-link">idColumn</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Column displaying each menu item's ID.</div>
+</div>
+<div class="col-first even-row-color"><code>private javafx.scene.control.TableView<wbr>&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#menuTable" class="member-name-link">menuTable</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Table displaying the active menu items.</div>
+</div>
+<div class="col-first odd-row-color"><code>private javafx.scene.control.TableColumn<wbr>&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#nameColumn" class="member-name-link">nameColumn</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Column displaying each menu item's name.</div>
+</div>
+<div class="col-first even-row-color"><code>private javafx.scene.control.TableColumn<wbr>&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#priceColumn" class="member-name-link">priceColumn</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Column displaying each menu item's price.</div>
+</div>
+</div>
+</section>
+</li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <li>
 <section class="constructor-summary" id="constructor-summary">
@@ -118,16 +157,37 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addMenuItem(javafx.event.ActionEvent)" class="member-name-link">addMenuItem</a><wbr>(javafx.event.ActionEvent&nbsp;event)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Adds a new menu item with its name, price, description,
+ and recipe after checking that the inputs are valid.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#goBack(javafx.event.ActionEvent)" class="member-name-link">goBack</a><wbr>(javafx.event.ActionEvent&nbsp;event)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the manager to the main manager screen.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#initialize()" class="member-name-link">initialize</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Initializes the menu table and displays all active menu items.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#parsePrice(java.lang.String)" class="member-name-link">parsePrice</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;priceText)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Converts the entered price into a nonnegative number.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeMenuItem(javafx.event.ActionEvent)" class="member-name-link">removeMenuItem</a><wbr>(javafx.event.ActionEvent&nbsp;event)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Removes the selected menu item from the active menu
+ after the manager confirms the removal.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateMenuItem(javafx.event.ActionEvent)" class="member-name-link">updateMenuItem</a><wbr>(javafx.event.ActionEvent&nbsp;event)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Updates the selected menu item's name, price, description,
+ and recipe after checking that the inputs are valid.</div>
+</div>
 </div>
 </div>
 </div>
@@ -140,6 +200,49 @@ loadScripts(document, 'script');</script>
 </section>
 <section class="details">
 <ul class="details-list">
+<!-- ============ FIELD DETAIL =========== -->
+<li>
+<section class="field-details" id="field-detail">
+<h2>Field Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="menuTable">
+<h3>menuTable</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.control.TableView&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>&gt;</span>&nbsp;<span class="element-name">menuTable</span></div>
+<div class="block">Table displaying the active menu items.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="idColumn">
+<h3>idColumn</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.control.TableColumn&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</span>&nbsp;<span class="element-name">idColumn</span></div>
+<div class="block">Column displaying each menu item's ID.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="nameColumn">
+<h3>nameColumn</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.control.TableColumn&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">nameColumn</span></div>
+<div class="block">Column displaying each menu item's name.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="priceColumn">
+<h3>priceColumn</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.control.TableColumn&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a>&gt;</span>&nbsp;<span class="element-name">priceColumn</span></div>
+<div class="block">Column displaying each menu item's price.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="descriptionColumn">
+<h3>descriptionColumn</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.control.TableColumn&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">descriptionColumn</span></div>
+<div class="block">Column displaying each menu item's description.</div>
+</section>
+</li>
+</ul>
+</section>
+</li>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <li>
 <section class="constructor-details" id="constructor-detail">
@@ -160,13 +263,23 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
+<section class="detail" id="initialize()">
+<h3>initialize</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">initialize</span>()</div>
+<div class="block">Initializes the menu table and displays all active menu items.</div>
+</section>
+</li>
+<li>
 <section class="detail" id="goBack(javafx.event.ActionEvent)">
 <h3>goBack</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">goBack</span><wbr><span class="parameters">(javafx.event.ActionEvent&nbsp;event)</span>
             throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></span></div>
+<div class="block">Returns the manager to the main manager screen.</div>
 <dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>event</code> - the action event that triggered the navigation</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></code> - if the manager screen cannot be loaded</dd>
 </dl>
 </section>
 </li>
@@ -174,18 +287,49 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="addMenuItem(javafx.event.ActionEvent)">
 <h3>addMenuItem</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addMenuItem</span><wbr><span class="parameters">(javafx.event.ActionEvent&nbsp;event)</span></div>
+<div class="block">Adds a new menu item with its name, price, description,
+ and recipe after checking that the inputs are valid.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>event</code> - the action event that triggered the method</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="updateMenuItem(javafx.event.ActionEvent)">
 <h3>updateMenuItem</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">updateMenuItem</span><wbr><span class="parameters">(javafx.event.ActionEvent&nbsp;event)</span></div>
+<div class="block">Updates the selected menu item's name, price, description,
+ and recipe after checking that the inputs are valid.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>event</code> - the action event that triggered the method</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="removeMenuItem(javafx.event.ActionEvent)">
 <h3>removeMenuItem</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">removeMenuItem</span><wbr><span class="parameters">(javafx.event.ActionEvent&nbsp;event)</span></div>
+<div class="block">Removes the selected menu item from the active menu
+ after the manager confirms the removal.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>event</code> - the action event that triggered the method</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="parsePrice(java.lang.String)">
+<h3>parsePrice</h3>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Float.html" title="class or interface in java.lang" class="external-link">Float</a></span>&nbsp;<span class="element-name">parsePrice</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;priceText)</span></div>
+<div class="block">Converts the entered price into a nonnegative number.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>priceText</code> - the price entered by the manager</dd>
+<dt>Returns:</dt>
+<dd>the price, or null if the input is invalid or negative</dd>
+</dl>
 </section>
 </li>
 </ul>
