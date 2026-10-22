@@ -115,6 +115,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">private static class </span><span class="element-name type-name-label">InventoryController.UnitsCell</span>
 <span class="extends-implements">extends javafx.scene.control.cell.TextFieldTableCell&lt;<a href="InventoryItem.html" title="class in Unnamed Package">InventoryItem</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</span></div>
+<div class="block">Custom cell type that includes an add button on the right for incrementing cell value</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -190,7 +191,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">UnitsCell</a>()</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Creates a cell with the add to inventory button</div>
+</div>
 </div>
 </section>
 </li>
@@ -207,17 +210,25 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#cancelEdit()" class="member-name-link">cancelEdit</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">(non-Javadoc)</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#showAddDialog()" class="member-name-link">showAddDialog</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Show the add to inventory dialog.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#showDisplay(java.lang.Integer)" class="member-name-link">showDisplay</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;units)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Update the text of the cell</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateItem(java.lang.Integer,boolean)" class="member-name-link">updateItem</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;units,
  boolean&nbsp;empty)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">(non-Javadoc)</div>
+</div>
 </div>
 </div>
 </div>
@@ -301,6 +312,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="&lt;init&gt;()">
 <h3>UnitsCell</h3>
 <div class="member-signature"><span class="element-name">UnitsCell</span>()</div>
+<div class="block">Creates a cell with the add to inventory button</div>
 </section>
 </li>
 </ul>
@@ -315,12 +327,18 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="showAddDialog()">
 <h3>showAddDialog</h3>
 <div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">showAddDialog</span>()</div>
+<div class="block">Show the add to inventory dialog. Performs the transaction if submitted</div>
 </section>
 </li>
 <li>
 <section class="detail" id="showDisplay(java.lang.Integer)">
 <h3>showDisplay</h3>
 <div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">showDisplay</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;units)</span></div>
+<div class="block">Update the text of the cell</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>units</code> - </dd>
+</dl>
 </section>
 </li>
 <li>
@@ -328,9 +346,16 @@ loadScripts(document, 'script');</script>
 <h3>updateItem</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">updateItem</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;units,
  boolean&nbsp;empty)</span></div>
+<div class="block">(non-Javadoc)</div>
 <dl class="notes">
 <dt>Overrides:</dt>
 <dd><code>updateItem</code>&nbsp;in class&nbsp;<code>javafx.scene.control.cell.TextFieldTableCell&lt;<a href="InventoryItem.html" title="class in Unnamed Package">InventoryItem</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list-long">
+<li><code>TextFieldTableCell.updateItem(java.lang.Object, boolean)</code></li>
+</ul>
+</dd>
 </dl>
 </section>
 </li>
@@ -338,9 +363,16 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="cancelEdit()">
 <h3>cancelEdit</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">cancelEdit</span>()</div>
+<div class="block">(non-Javadoc)</div>
 <dl class="notes">
 <dt>Overrides:</dt>
 <dd><code>cancelEdit</code>&nbsp;in class&nbsp;<code>javafx.scene.control.cell.TextFieldTableCell&lt;<a href="InventoryItem.html" title="class in Unnamed Package">InventoryItem</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list-long">
+<li><code>TextFieldTableCell.cancelEdit()</code></li>
+</ul>
+</dd>
 </dl>
 </section>
 </li>

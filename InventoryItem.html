@@ -89,6 +89,11 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">InventoryItem</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Represents a single item in the inventory table.
+ <p>
+ Each inventory item stores its ID, name, unit price, number of units,
+ and number of servings per unit. JavaFX properties are used to allow
+ the item's values to be observed and updated by the user interface.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -103,19 +108,29 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>javafx.beans.property.IntegerProperty</code></div>
 <div class="col-second even-row-color"><code><a href="#itemIdProperty" class="member-name-link">itemId</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Returns the JavaFX property representing this item's ID.</div>
+</div>
 <div class="col-first odd-row-color"><code>javafx.beans.property.StringProperty</code></div>
 <div class="col-second odd-row-color"><code><a href="#itemNameProperty" class="member-name-link">itemName</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Returns the JavaFX property representing this item's name.</div>
+</div>
 <div class="col-first even-row-color"><code>javafx.beans.property.IntegerProperty</code></div>
 <div class="col-second even-row-color"><code><a href="#servingsPerUnitProperty" class="member-name-link">servingsPerUnit</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Returns the JavaFX property representing this item's servings per unit.</div>
+</div>
 <div class="col-first odd-row-color"><code>javafx.beans.property.FloatProperty</code></div>
 <div class="col-second odd-row-color"><code><a href="#unitPriceProperty" class="member-name-link">unitPrice</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Returns the JavaFX property representing this item's unit price.</div>
+</div>
 <div class="col-first even-row-color"><code>javafx.beans.property.IntegerProperty</code></div>
 <div class="col-second even-row-color"><code><a href="#unitsProperty" class="member-name-link">units</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Returns the JavaFX property representing this item's unit count.</div>
+</div>
 </div>
 </section>
 </li>
@@ -130,7 +145,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>private static int</code></div>
 <div class="col-second even-row-color"><code><a href="#HIGHEST_ID" class="member-name-link">HIGHEST_ID</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Tracks the highest item ID assigned or identified so far.</div>
+</div>
 <div class="col-first odd-row-color"><code>private final javafx.beans.property.IntegerProperty</code></div>
 <div class="col-second odd-row-color"><code><a href="#itemId" class="member-name-link">itemId</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
@@ -162,7 +179,9 @@ loadScripts(document, 'script');</script>
  float&nbsp;unitPrice,
  int&nbsp;units,
  int&nbsp;servingsPerUnit)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Constructs an inventory item with the specified values.</div>
+</div>
 </div>
 </section>
 </li>
@@ -179,68 +198,84 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getHighestId()" class="member-name-link">getHighestId</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Returns the highest item ID currently recorded.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getId()" class="member-name-link">getId</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the ID of this inventory item.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getItemName()" class="member-name-link">getItemName</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the value of the <code>itemName</code> property.</div>
+<div class="block">Returns the name of this inventory item.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getServingsPerUnit()" class="member-name-link">getServingsPerUnit</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the value of the <code>servingsPerUnit</code> property.</div>
+<div class="block">Returns the number of servings contained in one unit of this item.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>float</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUnitPrice()" class="member-name-link">getUnitPrice</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the value of the <code>unitPrice</code> property.</div>
+<div class="block">Returns the price of one unit of this inventory item.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUnits()" class="member-name-link">getUnits</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the value of the <code>units</code> property.</div>
+<div class="block">Returns the number of units of this item currently in inventory.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>javafx.beans.property.IntegerProperty</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#itemIdProperty()" class="member-name-link">itemIdProperty</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the JavaFX property representing this item's ID.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>javafx.beans.property.StringProperty</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#itemNameProperty()" class="member-name-link">itemNameProperty</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the JavaFX property representing this item's name.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>javafx.beans.property.IntegerProperty</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#servingsPerUnitProperty()" class="member-name-link">servingsPerUnitProperty</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the JavaFX property representing this item's servings per unit.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setItemName(java.lang.String)" class="member-name-link">setItemName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;string)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the value of the <code>itemName</code> property.</div>
+<div class="block">Sets the name of this inventory item.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setServingsPerUnit(int)" class="member-name-link">setServingsPerUnit</a><wbr>(int&nbsp;newServings)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the value of the <code>servingsPerUnit</code> property.</div>
+<div class="block">Sets the number of servings contained in one unit of this item.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setUnitPrice(float)" class="member-name-link">setUnitPrice</a><wbr>(float&nbsp;newPrice)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the value of the <code>unitPrice</code> property.</div>
+<div class="block">Sets the price of one unit of this inventory item.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setUnits(int)" class="member-name-link">setUnits</a><wbr>(int&nbsp;val)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the value of the <code>units</code> property.</div>
+<div class="block">Sets the number of units of this item currently in inventory.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>javafx.beans.property.FloatProperty</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#unitPriceProperty()" class="member-name-link">unitPriceProperty</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the JavaFX property representing this item's unit price.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>javafx.beans.property.IntegerProperty</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#unitsProperty()" class="member-name-link">unitsProperty</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the JavaFX property representing this item's unit count.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#updateHighestId(java.util.List)" class="member-name-link">updateHighestId</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="InventoryItem.html" title="class in Unnamed Package">InventoryItem</a>&gt;&nbsp;items)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Recalculates the highest item ID using the provided inventory items.</div>
+</div>
 </div>
 </div>
 </div>
@@ -262,6 +297,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="itemIdProperty">
 <h3>itemId</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.IntegerProperty</span>&nbsp;<span class="element-name">itemIdProperty</span></div>
+<div class="block">Returns the JavaFX property representing this item's ID.
+ This property can be used for data binding and change observation.</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -276,6 +313,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="itemNameProperty">
 <h3>itemName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.StringProperty</span>&nbsp;<span class="element-name">itemNameProperty</span></div>
+<div class="block">Returns the JavaFX property representing this item's name.
+ This property can be used for data binding and change observation.</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -292,6 +331,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="unitPriceProperty">
 <h3>unitPrice</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.FloatProperty</span>&nbsp;<span class="element-name">unitPriceProperty</span></div>
+<div class="block">Returns the JavaFX property representing this item's unit price.
+ This property can be used for data binding and change observation.</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -308,6 +349,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="unitsProperty">
 <h3>units</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.IntegerProperty</span>&nbsp;<span class="element-name">unitsProperty</span></div>
+<div class="block">Returns the JavaFX property representing this item's unit count.
+ This property can be used for data binding and change observation.</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -324,6 +367,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="servingsPerUnitProperty">
 <h3>servingsPerUnit</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.IntegerProperty</span>&nbsp;<span class="element-name">servingsPerUnitProperty</span></div>
+<div class="block">Returns the JavaFX property representing this item's servings per unit.
+ This property can be used for data binding and change observation.</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -378,6 +423,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="HIGHEST_ID">
 <h3>HIGHEST_ID</h3>
 <div class="member-signature"><span class="modifiers">private static</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">HIGHEST_ID</span></div>
+<div class="block">Tracks the highest item ID assigned or identified so far.
+ This value is used to keep track of the largest ID among inventory items.</div>
 </section>
 </li>
 </ul>
@@ -396,6 +443,16 @@ loadScripts(document, 'script');</script>
  float&nbsp;unitPrice,
  int&nbsp;units,
  int&nbsp;servingsPerUnit)</span></div>
+<div class="block">Constructs an inventory item with the specified values.
+ Updates the recorded highest ID if the new item's ID exceeds it.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>itemId</code> - the identifier assigned to the inventory item</dd>
+<dd><code>itemName</code> - the name of the inventory item</dd>
+<dd><code>unitPrice</code> - the price of one unit of the item</dd>
+<dd><code>units</code> - the number of units currently in inventory</dd>
+<dd><code>servingsPerUnit</code> - the number of servings contained in one unit</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -410,36 +467,44 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getHighestId()">
 <h3>getHighestId</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getHighestId</span>()</div>
+<div class="block">Returns the highest item ID currently recorded.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the highest recorded inventory item ID</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="updateHighestId(java.util.List)">
 <h3>updateHighestId</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">updateHighestId</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="InventoryItem.html" title="class in Unnamed Package">InventoryItem</a>&gt;&nbsp;items)</span></div>
+<div class="block">Recalculates the highest item ID using the provided inventory items.
+ The current highest ID is reset to zero before the list is examined.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>items</code> - the list of inventory items used to determine the highest ID</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getId()">
 <h3>getId</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getId</span>()</div>
+<div class="block">Returns the ID of this inventory item.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the inventory item's ID</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getItemName()">
 <h3>getItemName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getItemName</span>()</div>
-<div class="block">Gets the value of the <code>itemName</code> property.</div>
+<div class="block">Returns the name of this inventory item.</div>
 <dl class="notes">
-<dt>Property description:</dt>
 <dt>Returns:</dt>
-<dd>the value of the <code>itemName</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#setItemName(java.lang.String)"><code>setItemName(String)</code></a></li>
-<li><a href="#itemNameProperty()"><code>itemNameProperty()</code></a></li>
-</ul>
-</dd>
+<dd>the inventory item's name</dd>
 </dl>
 </section>
 </li>
@@ -447,18 +512,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="setItemName(java.lang.String)">
 <h3>setItemName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setItemName</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;string)</span></div>
-<div class="block">Sets the value of the <code>itemName</code> property.</div>
+<div class="block">Sets the name of this inventory item.</div>
 <dl class="notes">
-<dt>Property description:</dt>
 <dt>Parameters:</dt>
-<dd><code>string</code> - the value for the <code>itemName</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#getItemName()"><code>getItemName()</code></a></li>
-<li><a href="#itemNameProperty()"><code>itemNameProperty()</code></a></li>
-</ul>
-</dd>
+<dd><code>string</code> - the new name for the inventory item</dd>
 </dl>
 </section>
 </li>
@@ -466,18 +523,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getUnitPrice()">
 <h3>getUnitPrice</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">float</span>&nbsp;<span class="element-name">getUnitPrice</span>()</div>
-<div class="block">Gets the value of the <code>unitPrice</code> property.</div>
+<div class="block">Returns the price of one unit of this inventory item.</div>
 <dl class="notes">
-<dt>Property description:</dt>
 <dt>Returns:</dt>
-<dd>the value of the <code>unitPrice</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#setUnitPrice(float)"><code>setUnitPrice(float)</code></a></li>
-<li><a href="#unitPriceProperty()"><code>unitPriceProperty()</code></a></li>
-</ul>
-</dd>
+<dd>the unit price</dd>
 </dl>
 </section>
 </li>
@@ -485,18 +534,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="setUnitPrice(float)">
 <h3>setUnitPrice</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setUnitPrice</span><wbr><span class="parameters">(float&nbsp;newPrice)</span></div>
-<div class="block">Sets the value of the <code>unitPrice</code> property.</div>
+<div class="block">Sets the price of one unit of this inventory item.</div>
 <dl class="notes">
-<dt>Property description:</dt>
 <dt>Parameters:</dt>
-<dd><code>newPrice</code> - the value for the <code>unitPrice</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#getUnitPrice()"><code>getUnitPrice()</code></a></li>
-<li><a href="#unitPriceProperty()"><code>unitPriceProperty()</code></a></li>
-</ul>
-</dd>
+<dd><code>newPrice</code> - the new unit price</dd>
 </dl>
 </section>
 </li>
@@ -504,18 +545,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getUnits()">
 <h3>getUnits</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getUnits</span>()</div>
-<div class="block">Gets the value of the <code>units</code> property.</div>
+<div class="block">Returns the number of units of this item currently in inventory.</div>
 <dl class="notes">
-<dt>Property description:</dt>
 <dt>Returns:</dt>
-<dd>the value of the <code>units</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#setUnits(int)"><code>setUnits(int)</code></a></li>
-<li><a href="#unitsProperty()"><code>unitsProperty()</code></a></li>
-</ul>
-</dd>
+<dd>the current number of units</dd>
 </dl>
 </section>
 </li>
@@ -523,18 +556,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="setUnits(int)">
 <h3>setUnits</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setUnits</span><wbr><span class="parameters">(int&nbsp;val)</span></div>
-<div class="block">Sets the value of the <code>units</code> property.</div>
+<div class="block">Sets the number of units of this item currently in inventory.</div>
 <dl class="notes">
-<dt>Property description:</dt>
 <dt>Parameters:</dt>
-<dd><code>val</code> - the value for the <code>units</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#getUnits()"><code>getUnits()</code></a></li>
-<li><a href="#unitsProperty()"><code>unitsProperty()</code></a></li>
-</ul>
-</dd>
+<dd><code>val</code> - the new number of units</dd>
 </dl>
 </section>
 </li>
@@ -542,18 +567,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getServingsPerUnit()">
 <h3>getServingsPerUnit</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getServingsPerUnit</span>()</div>
-<div class="block">Gets the value of the <code>servingsPerUnit</code> property.</div>
+<div class="block">Returns the number of servings contained in one unit of this item.</div>
 <dl class="notes">
-<dt>Property description:</dt>
 <dt>Returns:</dt>
-<dd>the value of the <code>servingsPerUnit</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#setServingsPerUnit(int)"><code>setServingsPerUnit(int)</code></a></li>
-<li><a href="#servingsPerUnitProperty()"><code>servingsPerUnitProperty()</code></a></li>
-</ul>
-</dd>
+<dd>the number of servings per unit</dd>
 </dl>
 </section>
 </li>
@@ -561,18 +578,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="setServingsPerUnit(int)">
 <h3>setServingsPerUnit</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setServingsPerUnit</span><wbr><span class="parameters">(int&nbsp;newServings)</span></div>
-<div class="block">Sets the value of the <code>servingsPerUnit</code> property.</div>
+<div class="block">Sets the number of servings contained in one unit of this item.</div>
 <dl class="notes">
-<dt>Property description:</dt>
 <dt>Parameters:</dt>
-<dd><code>newServings</code> - the value for the <code>servingsPerUnit</code> property</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#getServingsPerUnit()"><code>getServingsPerUnit()</code></a></li>
-<li><a href="#servingsPerUnitProperty()"><code>servingsPerUnitProperty()</code></a></li>
-</ul>
-</dd>
+<dd><code>newServings</code> - the new number of servings per unit</dd>
 </dl>
 </section>
 </li>
@@ -580,9 +589,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="itemIdProperty()">
 <h3>itemIdProperty</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.IntegerProperty</span>&nbsp;<span class="element-name">itemIdProperty</span>()</div>
+<div class="block">Returns the JavaFX property representing this item's ID.
+ This property can be used for data binding and change observation.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the <code>itemId</code> property</dd>
+<dd>the integer property for the item ID</dd>
 </dl>
 </section>
 </li>
@@ -590,9 +601,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="itemNameProperty()">
 <h3>itemNameProperty</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.StringProperty</span>&nbsp;<span class="element-name">itemNameProperty</span>()</div>
+<div class="block">Returns the JavaFX property representing this item's name.
+ This property can be used for data binding and change observation.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the <code>itemName</code> property</dd>
+<dd>the string property for the item name</dd>
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
@@ -607,9 +620,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="unitPriceProperty()">
 <h3>unitPriceProperty</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.FloatProperty</span>&nbsp;<span class="element-name">unitPriceProperty</span>()</div>
+<div class="block">Returns the JavaFX property representing this item's unit price.
+ This property can be used for data binding and change observation.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the <code>unitPrice</code> property</dd>
+<dd>the float property for the unit price</dd>
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
@@ -624,9 +639,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="unitsProperty()">
 <h3>unitsProperty</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.IntegerProperty</span>&nbsp;<span class="element-name">unitsProperty</span>()</div>
+<div class="block">Returns the JavaFX property representing this item's unit count.
+ This property can be used for data binding and change observation.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the <code>units</code> property</dd>
+<dd>the integer property for the number of units</dd>
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">
@@ -641,9 +658,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="servingsPerUnitProperty()">
 <h3>servingsPerUnitProperty</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">javafx.beans.property.IntegerProperty</span>&nbsp;<span class="element-name">servingsPerUnitProperty</span>()</div>
+<div class="block">Returns the JavaFX property representing this item's servings per unit.
+ This property can be used for data binding and change observation.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>the <code>servingsPerUnit</code> property</dd>
+<dd>the integer property for servings per unit</dd>
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list">

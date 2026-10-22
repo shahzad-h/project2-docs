@@ -119,21 +119,31 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#addItem(InventoryItem)" class="member-name-link">addItem</a><wbr>(<a href="InventoryItem.html" title="class in Unnamed Package">InventoryItem</a>&nbsp;newItem)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Insert a new item into the inventory table</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#deductItemCount(int,int)" class="member-name-link">deductItemCount</a><wbr>(int&nbsp;id,
  int&nbsp;amount)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Send a SQL query to deduct count from an item</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#deductItemCountByName(java.lang.String,int)" class="member-name-link">deductItemCountByName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  int&nbsp;amount)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Send a SQL query to deduct count from an item by name.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#deductItems(java.util.List)" class="member-name-link">deductItems</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>&gt;&nbsp;menuItems)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Creates a hashtable with the amounts of ingredients and sends commands to deduct them from the table</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#deductMultipleByName(java.util.HashMap)" class="member-name-link">deductMultipleByName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/HashMap.html" title="class or interface in java.util" class="external-link">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&nbsp;counts)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Deduct multiple inventory items in a single batch query</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="InventoryItem.html" title="class in Unnamed Package">InventoryItem</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getAllItems()" class="member-name-link">getAllItems</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -143,14 +153,20 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#modifyField(int,java.lang.String,java.lang.String)" class="member-name-link">modifyField</a><wbr>(int&nbsp;id,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;field,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;newValue)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Send a SQL query to update the field specified by field.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#modifyItemCount(int,int)" class="member-name-link">modifyItemCount</a><wbr>(int&nbsp;id,
  int&nbsp;newCount)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Send a SQL query to update the units row of the inventory item</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#removeItem(int)" class="member-name-link">removeItem</a><wbr>(int&nbsp;itemId)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Removes an item from the database's inventory table</div>
+</div>
 </div>
 </div>
 </div>
@@ -198,6 +214,12 @@ loadScripts(document, 'script');</script>
 <h3>modifyItemCount</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">modifyItemCount</span><wbr><span class="parameters">(int&nbsp;id,
  int&nbsp;newCount)</span></div>
+<div class="block">Send a SQL query to update the units row of the inventory item</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>id</code> - item id</dd>
+<dd><code>newCount</code> - new count value to update to</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -206,6 +228,13 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">modifyField</span><wbr><span class="parameters">(int&nbsp;id,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;field,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;newValue)</span></div>
+<div class="block">Send a SQL query to update the field specified by field.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>id</code> - item id</dd>
+<dd><code>field</code> - name of the string field to modify</dd>
+<dd><code>newValue</code> - the new value</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -213,6 +242,12 @@ loadScripts(document, 'script');</script>
 <h3>deductItemCount</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">deductItemCount</span><wbr><span class="parameters">(int&nbsp;id,
  int&nbsp;amount)</span></div>
+<div class="block">Send a SQL query to deduct count from an item</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>id</code> - item id</dd>
+<dd><code>amount</code> - amount to deduct</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -220,30 +255,56 @@ loadScripts(document, 'script');</script>
 <h3>deductItemCountByName</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">deductItemCountByName</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  int&nbsp;amount)</span></div>
+<div class="block">Send a SQL query to deduct count from an item by name. Prefer to use <a href="#deductItemCount(int,int)"><code>deductItemCount(int, int)</code></a></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - </dd>
+<dd><code>amount</code> - </dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="deductMultipleByName(java.util.HashMap)">
 <h3>deductMultipleByName</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">deductMultipleByName</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/HashMap.html" title="class or interface in java.util" class="external-link">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&nbsp;counts)</span></div>
+<div class="block">Deduct multiple inventory items in a single batch query</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>counts</code> - map of names to counts to deduct</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="addItem(InventoryItem)">
 <h3>addItem</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addItem</span><wbr><span class="parameters">(<a href="InventoryItem.html" title="class in Unnamed Package">InventoryItem</a>&nbsp;newItem)</span></div>
+<div class="block">Insert a new item into the inventory table</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>newItem</code> - the new item to be inserted</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="removeItem(int)">
 <h3>removeItem</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">removeItem</span><wbr><span class="parameters">(int&nbsp;itemId)</span></div>
+<div class="block">Removes an item from the database's inventory table</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>itemId</code> - Number ID of the menu item</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="deductItems(java.util.List)">
 <h3>deductItems</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">deductItems</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="MenuItem.html" title="class in Unnamed Package">MenuItem</a>&gt;&nbsp;menuItems)</span></div>
+<div class="block">Creates a hashtable with the amounts of ingredients and sends commands to deduct them from the table</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>menuItems</code> - list of menuItem objects</dd>
+</dl>
 </section>
 </li>
 </ul>
